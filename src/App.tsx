@@ -75,7 +75,7 @@ function App() {
       color: 'from-orange-500 to-amber-600',
       bgColor: 'bg-orange-50',
       hoverColor: 'hover:bg-orange-100',
-      link: 'https://realkgf.com/blogs',
+      link: 'https://nitinmp3.vercel.app/',
       openInSameTab: false
     },
     {
