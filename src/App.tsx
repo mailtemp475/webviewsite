@@ -75,7 +75,7 @@ function App() {
       color: 'from-orange-500 to-amber-600',
       bgColor: 'bg-orange-50',
       hoverColor: 'hover:bg-orange-100',
-      link: 'https://kahatkabirsunobhaisadho.blogspot.com/',
+      link: 'https://realkgf.com/blogs',
       openInSameTab: false
     },
     {
@@ -85,7 +85,7 @@ function App() {
       color: 'from-red-500 to-red-600',
       bgColor: 'bg-red-50',
       hoverColor: 'hover:bg-red-100',
-      link: 'https://www.youtube.com/@Nitin_das_satsang/streams',
+      link: 'https://realkgf.com/videos',
       openInSameTab: false
     },
     {
@@ -95,7 +95,7 @@ function App() {
       color: 'from-green-500 to-emerald-600',
       bgColor: 'bg-green-50',
       hoverColor: 'hover:bg-green-100',
-      link: 'https://easyt.io/',
+      link: 'https://realkgf.com/satsang',
       openInSameTab: false
     }
   ];
