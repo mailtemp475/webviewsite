@@ -10,23 +10,26 @@ interface AudioTrack {
 
 // Manual Track List - Aap yahan manually saare tracks add kar sakte hain
 const manualTracks: AudioTrack[] = [
-  {
+   {
     id: 1,
-    title: 'Divine Meditation',
+    title: '1)क्यों कुछ स्वयम्भू आतम ज्ञानी कबीर साहेब की वाणी',
     url: 'https://infoogy.s3.ap-south-1.amazonaws.com/testing/satsang/1749828802658-0_0.mp3',
-    duration: '5:23'
   },
   {
     id: 2,
-    title: 'Sacred Chants',
+    title: '2)आत्म ज्ञानी कभी किसी लोक में नहीं जाता',
     url: 'https://infoogy.s3.ap-south-1.amazonaws.com/testing/satsang/1749828804128-0_0.mp3',
-    duration: '7:45'
   },
   {
     id: 3,
-    title: 'Peaceful Prayers',
+    title: '3)ऐसा क्यों है कि बिना गुरु के कोई भी आत्म ज्ञान',
     url: 'https://infoogy.s3.ap-south-1.amazonaws.com/testing/satsang/1749828805658-0_0.mp3',
-    duration: '6:12'
+  },
+  
+   {
+     id: 4,
+     title: '4)आखिर क्यो हमें जिन्दगी में किसी ना किसी गुरु की जरूरत पडती है ।',
+     url: 'https://infoogy.s3.ap-south-1.amazonaws.com/testing/satsang/1749828807300-0_0.mp3',
   },
   // Yahan aap aur tracks add kar sakte hain:
   // {
