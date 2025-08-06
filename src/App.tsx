@@ -31,6 +31,36 @@ const manualTracks: AudioTrack[] = [
      title: '4)आखिर क्यो हमें जिन्दगी में किसी ना किसी गुरु की जरूरत पडती है ।',
      url: 'https://infoogy.s3.ap-south-1.amazonaws.com/testing/satsang/1749828807300-0_0.mp3',
   },
+   {
+     id: 5,
+     title: '5)कौन होता है पूरा गुरु और कौन होता है अधूरा गुरु',
+     url: 'https://infoogy.s3.ap-south-1.amazonaws.com/testing/satsang/1749828808872-0_0.mp3',
+  },
+   {
+     id: 6,
+     title: '6)किसी भी बावन अक्षरों वाले नाम से मुक्ति क्यों नही मिल सकती। ।आइये जानें ।',
+     url: 'https://infoogy.s3.ap-south-1.amazonaws.com/testing/satsang/1749828811039-0_0.mp3',
+  },
+   {
+     id: 7,
+     title: '7)आखिर वो कौन सी जगह है जहाँ परमात्मा रहता है',
+     url: 'https://infoogy.s3.ap-south-1.amazonaws.com/testing/satsang/1749828813257-0_0.mp3',
+  },
+   {
+     id: 8,
+     title: '8)कुछ लोग गुरु द्रोही क्यों हो जाते हैं ।।आइये जानें',
+     url: 'https://infoogy.s3.ap-south-1.amazonaws.com/testing/satsang/1749828814921-0_0.mp3',
+  },
+   {
+     id: 9,
+     title: '9)ये शब्द आपकी बंद आँखे खोल देगा ।। प्रेम से ध्यान लगा के सुनें',
+     url: 'https://infoogy.s3.ap-south-1.amazonaws.com/testing/satsang/1749828819276-0_0.mp3',
+  },
+   {
+     id: 10,
+     title: '10)कबीर नूरी देह के नहीं वो विदेह हैं ।। Part 1',
+     url: 'https://infoogy.s3.ap-south-1.amazonaws.com/testing/satsang/1749828820945-0_0.mp3',
+  },
   // Yahan aap aur tracks add kar sakte hain:
   // {
   //   id: 4,
