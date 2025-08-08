@@ -1,16 +1,16 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { Play, Pause, SkipBack, SkipForward, Volume2, Search, Music } from 'lucide-react';
+import { Play, Pause, SkipBack, SkipForward, Volume2, Search, Music, Gauge } from 'lucide-react';
 
 interface AudioTrack {
   id: number;
   title: string;
   url: string;
-  duration: string;
+  duration?: string;
 }
 
 // Manual Track List - Aap yahan manually saare tracks add kar sakte hain
 const manualTracks: AudioTrack[] = [
-   {
+  {
     id: 1,
     title: '1)क्यों कुछ स्वयम्भू आतम ज्ञानी कबीर साहेब की वाणी',
     url: 'https://infoogy.s3.ap-south-1.amazonaws.com/testing/satsang/1749828802658-0_0.mp3',
@@ -30,112 +30,73 @@ const manualTracks: AudioTrack[] = [
      id: 4,
      title: '4)आखिर क्यो हमें जिन्दगी में किसी ना किसी गुरु की जरूरत पडती है ।',
      url: 'https://infoogy.s3.ap-south-1.amazonaws.com/testing/satsang/1749828807300-0_0.mp3',
-  },
-   {
-     id: 5,
-     title: '5)कौन होता है पूरा गुरु और कौन होता है अधूरा गुरु',
-     url: 'https://infoogy.s3.ap-south-1.amazonaws.com/testing/satsang/1749828808872-0_0.mp3',
-  },
-   {
-     id: 6,
-     title: '6)किसी भी बावन अक्षरों वाले नाम से मुक्ति क्यों नही मिल सकती। ।आइये जानें ।',
-     url: 'https://infoogy.s3.ap-south-1.amazonaws.com/testing/satsang/1749828811039-0_0.mp3',
-  },
-   {
-     id: 7,
-     title: '7)आखिर वो कौन सी जगह है जहाँ परमात्मा रहता है',
-     url: 'https://infoogy.s3.ap-south-1.amazonaws.com/testing/satsang/1749828813257-0_0.mp3',
-  },
-   {
-     id: 8,
-     title: '8)कुछ लोग गुरु द्रोही क्यों हो जाते हैं ।।आइये जानें',
-     url: 'https://infoogy.s3.ap-south-1.amazonaws.com/testing/satsang/1749828814921-0_0.mp3',
-  },
-   {
-     id: 9,
-     title: '9)ये शब्द आपकी बंद आँखे खोल देगा ।। प्रेम से ध्यान लगा के सुनें',
-     url: 'https://infoogy.s3.ap-south-1.amazonaws.com/testing/satsang/1749828819276-0_0.mp3',
-  },
-   {
-     id: 10,
-     title: '10)कबीर नूरी देह के नहीं वो विदेह हैं ।। Part 1',
-     url: 'https://infoogy.s3.ap-south-1.amazonaws.com/testing/satsang/1749828820945-0_0.mp3',
-  },
-  {
-    id: 11,
-    title: '11)थे विदेह देह धर आये ।। काया कबीर कहाये ।। कबीर नूरी देह नहीं विदेह हैं ।।part',
-    url: 'https://infoogy.s3.ap-south-1.amazonaws.com/testing/satsang/1749828822981-0_0.mp3',
-},
-{
-    id: 12,
-    title: '12)ये शब्द समझ लिया तो आपके सब सवाल खत्म हो जाएंगे ।। अंग्रेज तक नहीं समझ पाए अप',
-    url: 'https://infoogy.s3.ap-south-1.amazonaws.com/testing/satsang/1749828831012-0_0.mp3',
-},
-{
-    id: 13,
-    title: '13)ध्यान और अध्यान से परे है सहज ध्यान ।। कहत कबीर सुनो भाई साधो ।।',
-    url: 'https://infoogy.s3.ap-south-1.amazonaws.com/testing/satsang/1749828838161-0_0.mp3',
-},
-{
-    id: 14,
-    title: '14)रामपाल जी के भाई महेंद्र जी अपने मुख से सत्य उजागर करते हुय ।। कहत कबीर सुनो',
-    url: 'https://infoogy.s3.ap-south-1.amazonaws.com/testing/satsang/1749828843256-0_0.mp3',
-},
-{
-    id: 15,
-    title: '15)पूरे गुरु की सैन बिना तेरी कैसे छूटे बकवाद ।।सतगुरु कबीर अनमोल भजन ।।',
-    url: 'https://infoogy.s3.ap-south-1.amazonaws.com/testing/satsang/1749828844123-0_0.mp3',
-},
-{
-    id: 16,
-    title: '16)आखिर वो कौनसी एकमात्र विधि है जिसके द्वारा हम आत्मा की सच्ची पूजा कर सकते हैं',
-    url: 'https://infoogy.s3.ap-south-1.amazonaws.com/testing/satsang/1749828846644-0_0.mp3',
-},
-{
-    id: 17,
-    title: '17)अगर किसी असली संत को कोई अज्ञानी बोले या निंदा करे तो क्या होता है ।।आइये जान',
-    url: 'https://infoogy.s3.ap-south-1.amazonaws.com/testing/satsang/1749828850548-0_0.mp3',
-},
-{
-    id: 18,
-    title: '18)क्या ये चौरासी की जेल रुपी दुनिया परमात्मा ने बनाई है ।। कदापि नहीं ।। आइये ज',
-    url: 'https://infoogy.s3.ap-south-1.amazonaws.com/testing/satsang/1749828854545-0_0.mp3',
-},
-{
-    id: 19,
-    title: '19)चार राम कौन हैं ।।क्यों कुछ पाखण्डी लोग अज्ञानता वश पाँचवा छठा सातवां राम लिख',
-    url: 'https://infoogy.s3.ap-south-1.amazonaws.com/testing/satsang/1749828858978-0_0.mp3',
-},
-{
-    id: 20,
-    title: '20)अगर ये समझ लिया तो समझो सब समझ लिया ।।दुविधा ख़तम और आत्म भक्त्ति शुरू ।।',
-    url: 'https://infoogy.s3.ap-south-1.amazonaws.com/testing/satsang/1749828864026-0_0.mp3',
-},
-
+   },
   // Yahan aap aur tracks add kar sakte hain:
-  // {
-  //   id: 4,
-  //   title: 'Your Track Title',
-  //   url: 'https://infoogy.s3.ap-south-1.amazonaws.com/testing/satsang/YOUR_FILE_ID-0_0.mp3',
-  //   duration: '4:30'
-  // },
   // {
   //   id: 5,
   //   title: 'Another Track',
   //   url: 'https://infoogy.s3.ap-south-1.amazonaws.com/testing/satsang/ANOTHER_FILE_ID-0_0.mp3',
-  //   duration: '6:15'
   // },
 ];
 
 function App() {
   const [tracks] = useState<AudioTrack[]>(manualTracks);
+  const [trackDurations, setTrackDurations] = useState<{[key: number]: string}>({});
   const [currentTrackIndex, setCurrentTrackIndex] = useState(0);
   const [isPlaying, setIsPlaying] = useState(false);
   const [currentTime, setCurrentTime] = useState(0);
   const [duration, setDuration] = useState(0);
   const [volume, setVolume] = useState(1);
+  const [playbackRate, setPlaybackRate] = useState(1);
   const [searchTerm, setSearchTerm] = useState('');
   const audioRef = useRef<HTMLAudioElement>(null);
+
+  // Auto-fetch duration for all tracks
+  useEffect(() => {
+    const fetchDurations = async () => {
+      const durations: {[key: number]: string} = {};
+      
+      for (const track of tracks) {
+        try {
+          const audio = new Audio();
+          audio.preload = 'metadata';
+          
+          await new Promise((resolve, reject) => {
+            audio.addEventListener('loadedmetadata', () => {
+              const duration = audio.duration;
+              if (!isNaN(duration)) {
+                const minutes = Math.floor(duration / 60);
+                const seconds = Math.floor(duration % 60);
+                durations[track.id] = `${minutes}:${seconds.toString().padStart(2, '0')}`;
+              } else {
+                durations[track.id] = 'Loading...';
+              }
+              resolve(void 0);
+            });
+            
+            audio.addEventListener('error', () => {
+              durations[track.id] = 'Error';
+              resolve(void 0);
+            });
+            
+            // Set timeout to avoid hanging
+            setTimeout(() => {
+              durations[track.id] = 'Unknown';
+              resolve(void 0);
+            }, 10000);
+            
+            audio.src = track.url;
+          });
+        } catch (error) {
+          durations[track.id] = 'Error';
+        }
+      }
+      
+      setTrackDurations(durations);
+    };
+    
+    fetchDurations();
+  }, [tracks]);
 
   const currentTrack = tracks[currentTrackIndex];
   const filteredTracks = tracks.filter(track => 
@@ -172,6 +133,12 @@ function App() {
       audioRef.current.volume = volume;
     }
   }, [volume]);
+
+  useEffect(() => {
+    if (audioRef.current) {
+      audioRef.current.playbackRate = playbackRate;
+    }
+  }, [playbackRate]);
 
   const togglePlay = async () => {
     if (!audioRef.current) return;
@@ -279,7 +246,9 @@ function App() {
                           <h3 className="font-medium text-sm truncate">{track.title}</h3>
                           <p className="text-blue-300 text-xs">Track {track.id}</p>
                         </div>
-                        <span className="text-blue-300 text-xs">{track.duration}</span>
+                        <span className="text-blue-300 text-xs">
+                          {trackDurations[track.id] || 'Loading...'}
+                        </span>
                       </div>
                     </div>
                   );
@@ -346,7 +315,7 @@ function App() {
             </div>
 
             {/* Volume Control */}
-            <div className="flex items-center justify-center space-x-4">
+            <div className="flex items-center justify-center space-x-4 mb-6">
               <Volume2 className="w-5 h-5 text-blue-300" />
               <input
                 type="range"
@@ -361,6 +330,27 @@ function App() {
                 }}
               />
               <span className="text-blue-300 text-sm">{Math.round(volume * 100)}%</span>
+            </div>
+
+            {/* Playback Speed Control */}
+            <div className="flex items-center justify-center space-x-4">
+              <Gauge className="w-5 h-5 text-blue-300" />
+              <div className="flex space-x-2">
+                {[0.75, 1, 1.25, 1.5, 2].map((speed) => (
+                  <button
+                    key={speed}
+                    onClick={() => setPlaybackRate(speed)}
+                    className={`px-3 py-1 rounded-lg text-sm font-medium transition-all duration-300 ${
+                      playbackRate === speed
+                        ? 'bg-yellow-400 text-black'
+                        : 'bg-white/10 text-blue-300 hover:bg-white/20'
+                    }`}
+                  >
+                    {speed}x
+                  </button>
+                ))}
+              </div>
+              <span className="text-blue-300 text-sm">Speed: {playbackRate}x</span>
             </div>
 
             {/* Audio Element */}
