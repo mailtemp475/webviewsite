@@ -61,6 +61,57 @@ const manualTracks: AudioTrack[] = [
      title: '10)कबीर नूरी देह के नहीं वो विदेह हैं ।। Part 1',
      url: 'https://infoogy.s3.ap-south-1.amazonaws.com/testing/satsang/1749828820945-0_0.mp3',
   },
+  {
+    id: 11,
+    title: '11)थे विदेह देह धर आये ।। काया कबीर कहाये ।। कबीर नूरी देह नहीं विदेह हैं ।।part',
+    url: 'https://infoogy.s3.ap-south-1.amazonaws.com/testing/satsang/1749828822981-0_0.mp3',
+},
+{
+    id: 12,
+    title: '12)ये शब्द समझ लिया तो आपके सब सवाल खत्म हो जाएंगे ।। अंग्रेज तक नहीं समझ पाए अप',
+    url: 'https://infoogy.s3.ap-south-1.amazonaws.com/testing/satsang/1749828831012-0_0.mp3',
+},
+{
+    id: 13,
+    title: '13)ध्यान और अध्यान से परे है सहज ध्यान ।। कहत कबीर सुनो भाई साधो ।।',
+    url: 'https://infoogy.s3.ap-south-1.amazonaws.com/testing/satsang/1749828838161-0_0.mp3',
+},
+{
+    id: 14,
+    title: '14)रामपाल जी के भाई महेंद्र जी अपने मुख से सत्य उजागर करते हुय ।। कहत कबीर सुनो',
+    url: 'https://infoogy.s3.ap-south-1.amazonaws.com/testing/satsang/1749828843256-0_0.mp3',
+},
+{
+    id: 15,
+    title: '15)पूरे गुरु की सैन बिना तेरी कैसे छूटे बकवाद ।।सतगुरु कबीर अनमोल भजन ।।',
+    url: 'https://infoogy.s3.ap-south-1.amazonaws.com/testing/satsang/1749828844123-0_0.mp3',
+},
+{
+    id: 16,
+    title: '16)आखिर वो कौनसी एकमात्र विधि है जिसके द्वारा हम आत्मा की सच्ची पूजा कर सकते हैं',
+    url: 'https://infoogy.s3.ap-south-1.amazonaws.com/testing/satsang/1749828846644-0_0.mp3',
+},
+{
+    id: 17,
+    title: '17)अगर किसी असली संत को कोई अज्ञानी बोले या निंदा करे तो क्या होता है ।।आइये जान',
+    url: 'https://infoogy.s3.ap-south-1.amazonaws.com/testing/satsang/1749828850548-0_0.mp3',
+},
+{
+    id: 18,
+    title: '18)क्या ये चौरासी की जेल रुपी दुनिया परमात्मा ने बनाई है ।। कदापि नहीं ।। आइये ज',
+    url: 'https://infoogy.s3.ap-south-1.amazonaws.com/testing/satsang/1749828854545-0_0.mp3',
+},
+{
+    id: 19,
+    title: '19)चार राम कौन हैं ।।क्यों कुछ पाखण्डी लोग अज्ञानता वश पाँचवा छठा सातवां राम लिख',
+    url: 'https://infoogy.s3.ap-south-1.amazonaws.com/testing/satsang/1749828858978-0_0.mp3',
+},
+{
+    id: 20,
+    title: '20)अगर ये समझ लिया तो समझो सब समझ लिया ।।दुविधा ख़तम और आत्म भक्त्ति शुरू ।।',
+    url: 'https://infoogy.s3.ap-south-1.amazonaws.com/testing/satsang/1749828864026-0_0.mp3',
+},
+
   // Yahan aap aur tracks add kar sakte hain:
   // {
   //   id: 4,
