@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 import React, { useState } from 'react';
 import { BookOpen, Youtube, Download, AArrowDown as Om, Heart, Music, Globe, MessageCircleQuestion, Book, Facebook, MessageCircle } from 'lucide-react';
 import ContactForm from './components/ContactForm';
@@ -8,6 +9,13 @@ function App() {
   const [language, setLanguage] = useState('hi'); // 'hi' for Hindi, 'en' for English
   const [isContactFormOpen, setIsContactFormOpen] = useState(false);
   const [currentView, setCurrentView] = useState('home'); // 'home', 'ebooks'
+=======
+import React, { useState } from 'react';
+import { BookOpen, Youtube, Download, AArrowDown as Om, Heart, Music, Globe } from 'lucide-react';
+
+function App() {
+  const [language, setLanguage] = useState('hi'); // 'hi' for Hindi, 'en' for English
+>>>>>>> fb64a66246388f5722a92d79f75b9ba325f58417
 
   const content = {
     hi: {
@@ -30,20 +38,26 @@ function App() {
           description: 'हमारे प्रेरणादायक ऑडियो सत्संग और शिक्षाओं के संग्रह के माध्यम से आध्यात्मिक ज्ञान का अन्वेषण करें'
         },
         {
+<<<<<<< HEAD
           title: 'ई-बुक्स',
           description: 'आध्यात्मिक ज्ञान से भरपूर पुस्तकों का संग्रह पढ़ें और डाउनलोड करें'
         },
         {
+=======
+>>>>>>> fb64a66246388f5722a92d79f75b9ba325f58417
           title: 'यूट्यूब चैनल',
           description: 'लाइव सत्संग सत्र, आध्यात्मिक प्रवचन और दिव्य शिक्षाएं देखें'
         },
         {
           title: 'सत्संग डाउनलोड',
           description: 'ऑफलाइन आध्यात्मिक अभ्यास और ध्यान के लिए यूट्यूब सत्संग वीडियो डाउनलोड करें'
+<<<<<<< HEAD
         },
         {
           title: 'सवाल जवाब',
           description: 'आध्यात्मिक प्रश्नों के उत्तर पाएं और अपनी शंकाओं का समाधान करें'
+=======
+>>>>>>> fb64a66246388f5722a92d79f75b9ba325f58417
         }
       ]
     },
@@ -67,20 +81,26 @@ function App() {
           description: 'Explore spiritual wisdom through our collection of inspiring Satsang blogs and teachings'
         },
         {
+<<<<<<< HEAD
           title: 'E-Books',
           description: 'Read and download our collection of spiritual wisdom books and sacred texts'
         },
         {
+=======
+>>>>>>> fb64a66246388f5722a92d79f75b9ba325f58417
           title: 'YouTube Channel',
           description: 'Watch live Satsang sessions, spiritual discourses, and divine teachings'
         },
         {
           title: 'Download Satsang',
           description: 'Download YouTube Satsang videos for offline spiritual practice and meditation'
+<<<<<<< HEAD
         },
         {
           title: 'Q&A Sessions',
           description: 'Get answers to spiritual questions and resolve your doubts through divine guidance'
+=======
+>>>>>>> fb64a66246388f5722a92d79f75b9ba325f58417
         }
       ]
     }
@@ -96,6 +116,7 @@ function App() {
       color: 'from-orange-500 to-amber-600',
       bgColor: 'bg-orange-50',
       hoverColor: 'hover:bg-orange-100',
+<<<<<<< HEAD
       link: 'https://kahatkabirsunobhaisadho.blogspot.com/',
       openInSameTab: false
     },
@@ -116,10 +137,24 @@ function App() {
       bgColor: 'bg-red-50',
       hoverColor: 'hover:bg-red-100',
       link: 'https://www.youtube.com/@Nitin_das_satsang/streams',
+=======
+      link: 'https://nitinmp3.vercel.app/',
+      openInSameTab: false
+    },
+    {
+      icon: Youtube,
+      title: currentContent.features[1].title,
+      description: currentContent.features[1].description,
+      color: 'from-red-500 to-red-600',
+      bgColor: 'bg-red-50',
+      hoverColor: 'hover:bg-red-100',
+      link: 'https://realkgf.com/videos',
+>>>>>>> fb64a66246388f5722a92d79f75b9ba325f58417
       openInSameTab: false
     },
     {
       icon: Download,
+<<<<<<< HEAD
       title: currentContent.features[3].title,
       description: currentContent.features[3].description,
       color: 'from-green-500 to-emerald-600',
@@ -144,6 +179,18 @@ function App() {
     return <EBooksSection language={language} onBack={() => setCurrentView('home')} />;
   }
 
+=======
+      title: currentContent.features[2].title,
+      description: currentContent.features[2].description,
+      color: 'from-green-500 to-emerald-600',
+      bgColor: 'bg-green-50',
+      hoverColor: 'hover:bg-green-100',
+      link: 'https://realkgf.com/satsang',
+      openInSameTab: false
+    }
+  ];
+
+>>>>>>> fb64a66246388f5722a92d79f75b9ba325f58417
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-orange-50 to-amber-50">
       {/* Header */}
@@ -206,6 +253,7 @@ function App() {
       {/* Features Grid */}
       <section className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
+<<<<<<< HEAD
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {features.map((feature, index) => {
               const IconComponent = feature.icon;
@@ -238,6 +286,11 @@ function App() {
                 );
               }
               
+=======
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {features.map((feature, index) => {
+              const IconComponent = feature.icon;
+>>>>>>> fb64a66246388f5722a92d79f75b9ba325f58417
               return (
                 <a
                   href={feature.link}
@@ -288,7 +341,11 @@ function App() {
       {/* Footer */}
       <footer className="bg-gray-900 text-white py-12 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
+<<<<<<< HEAD
           <div className="flex flex-col md:flex-row justify-between items-center mb-8">
+=======
+          <div className="flex flex-col md:flex-row justify-between items-center">
+>>>>>>> fb64a66246388f5722a92d79f75b9ba325f58417
             <div className="flex items-center space-x-3 mb-6 md:mb-0">
               <div className="bg-gradient-to-r from-orange-500 to-amber-600 p-2 rounded-full">
                 <Om className="h-5 w-5 text-white" />
@@ -320,6 +377,7 @@ function App() {
               </button>
             </div>
           </div>
+<<<<<<< HEAD
           
           {/* Social Media Section */}
           <div className="text-center mb-8">
@@ -914,12 +972,20 @@ function App() {
         }
       `}</style>
 >>>>>>> cc91286f49c38c944f6491b55fc3892ac2a057a7
+=======
+        </div>
+      </footer>
+>>>>>>> fb64a66246388f5722a92d79f75b9ba325f58417
     </div>
   );
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 export default App;
 =======
 export default App;
 >>>>>>> cc91286f49c38c944f6491b55fc3892ac2a057a7
+=======
+export default App;
+>>>>>>> fb64a66246388f5722a92d79f75b9ba325f58417
