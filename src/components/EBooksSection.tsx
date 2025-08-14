@@ -37,8 +37,8 @@ const EBooksSection: React.FC<EBooksSectionProps> = ({ onBack, language }) => {
       description: language === 'hi' 
         ? 'कबीर दास जी की अमृत वाणी और आध्यात्मिक शिक्षाएं' 
         : 'Divine teachings and spiritual wisdom of Kabir Das',
-      link: 'https://drive.google.com/file/d/170PV0ULXdckwk3bfsJgeU2Vq-J5as0tt/view?usp=sharing',
-      downloadLink: 'https://drive.google.com/uc?export=download&id=170PV0ULXdckwk3bfsJgeU2Vq-J5as0tt',
+      link: 'https://drive.google.com/file/d/1YHuHsQO2RpsuHN4Dahq0ZBWwyrLsvsaW/view?usp=sharing',
+      downloadLink: 'https://drive.google.com/uc?export=download&id=1YHuHsQO2RpsuHN4Dahq0ZBWwyrLsvsaW',
       color: 'from-orange-500 to-amber-600',
       bgColor: 'bg-orange-50'
     },
@@ -62,8 +62,8 @@ const EBooksSection: React.FC<EBooksSectionProps> = ({ onBack, language }) => {
       description: language === 'hi' 
         ? 'भक्ति और प्रेम के मार्ग पर चलने की दिव्य शिक्षा' 
         : 'Divine guidance on the path of devotion and love',
-      link: 'https://drive.google.com/file/d/170PV0ULXdckwk3bfsJgeU2Vq-J5as0tt/view?usp=sharing',
-      downloadLink: 'https://drive.google.com/uc?export=download&id=170PV0ULXdckwk3bfsJgeU2Vq-J5as0tt',
+      link: 'https://drive.google.com/file/d/1YHuHsQO2RpsuHN4Dahq0ZBWwyrLsvsaW/view?usp=sharing',
+      downloadLink: 'https://drive.google.com/uc?export=download&id=1YHuHsQO2RpsuHN4Dahq0ZBWwyrLsvsaW',
       color: 'from-purple-500 to-violet-600',
       bgColor: 'bg-purple-50'
     },
@@ -74,8 +74,8 @@ const EBooksSection: React.FC<EBooksSectionProps> = ({ onBack, language }) => {
       description: language === 'hi' 
         ? 'ध्यान की गहराई में जाने और समाधि प्राप्त करने के उपाय' 
         : 'Methods to deepen meditation and achieve spiritual enlightenment',
-      link: 'https://drive.google.com/file/d/170PV0ULXdckwk3bfsJgeU2Vq-J5as0tt/view?usp=sharing',
-      downloadLink: 'https://drive.google.com/uc?export=download&id=170PV0ULXdckwk3bfsJgeU2Vq-J5as0tt',
+      link: 'https://drive.google.com/file/d/1YHuHsQO2RpsuHN4Dahq0ZBWwyrLsvsaW/view?usp=sharing',
+      downloadLink: 'https://drive.google.com/uc?export=download&id=1YHuHsQO2RpsuHN4Dahq0ZBWwyrLsvsaW',
       color: 'from-blue-500 to-indigo-600',
       bgColor: 'bg-blue-50'
     },
@@ -86,8 +86,8 @@ const EBooksSection: React.FC<EBooksSectionProps> = ({ onBack, language }) => {
       description: language === 'hi' 
         ? 'गुरु की महिमा और शिष्य के कर्तव्यों पर प्रकाश' 
         : 'Understanding the glory of Guru and duties of a disciple',
-      link: 'https://drive.google.com/file/d/170PV0ULXdckwk3bfsJgeU2Vq-J5as0tt/view?usp=sharing',
-      downloadLink: 'https://drive.google.com/uc?export=download&id=170PV0ULXdckwk3bfsJgeU2Vq-J5as0tt',
+      link: 'https://drive.google.com/file/d/1YHuHsQO2RpsuHN4Dahq0ZBWwyrLsvsaW/view?usp=sharing',
+      downloadLink: 'https://drive.google.com/uc?export=download&id=1YHuHsQO2RpsuHN4Dahq0ZBWwyrLsvsaW',
       color: 'from-green-500 to-emerald-600',
       bgColor: 'bg-green-50'
     },
@@ -98,8 +98,8 @@ const EBooksSection: React.FC<EBooksSectionProps> = ({ onBack, language }) => {
       description: language === 'hi' 
         ? 'सत्संग की महिमा और आध्यात्मिक उन्नति में इसका योगदान' 
         : 'The glory of Satsang and its role in spiritual progress',
-      link: 'https://drive.google.com/file/d/170PV0ULXdckwk3bfsJgeU2Vq-J5as0tt/view?usp=sharing',
-      downloadLink: 'https://drive.google.com/uc?export=download&id=170PV0ULXdckwk3bfsJgeU2Vq-J5as0tt',
+      link: 'https://drive.google.com/file/d/1YHuHsQO2RpsuHN4Dahq0ZBWwyrLsvsaW/view?usp=sharing',
+      downloadLink: 'https://drive.google.com/uc?export=download&id=1YHuHsQO2RpsuHN4Dahq0ZBWwyrLsvsaW',
       color: 'from-red-500 to-pink-600',
       bgColor: 'bg-red-50'
     },
@@ -110,8 +110,8 @@ const EBooksSection: React.FC<EBooksSectionProps> = ({ onBack, language }) => {
       description: language === 'hi' 
         ? 'आत्मा की खोज और स्वयं को जानने की यात्रा' 
         : 'Journey of self-discovery and knowing the true self',
-      link: 'https://drive.google.com/file/d/170PV0ULXdckwk3bfsJgeU2Vq-J5as0tt/view?usp=sharing',
-      downloadLink: 'https://drive.google.com/uc?export=download&id=170PV0ULXdckwk3bfsJgeU2Vq-J5as0tt',
+      link: 'https://drive.google.com/file/d/1YHuHsQO2RpsuHN4Dahq0ZBWwyrLsvsaW/view?usp=sharing',
+      downloadLink: 'https://drive.google.com/uc?export=download&id=1YHuHsQO2RpsuHN4Dahq0ZBWwyrLsvsaW',
       color: 'from-teal-500 to-cyan-600',
       bgColor: 'bg-teal-50'
     }
