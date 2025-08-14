@@ -343,7 +343,7 @@ function App() {
               
               {/* Facebook */}
               <a
-                href="https://www.facebook.com/KahatKabirNitinDas/"
+                href="https://m.facebook.com/KahatKabirNitinDas/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group flex flex-col items-center space-y-2 hover:transform hover:scale-110 transition-all duration-300"
